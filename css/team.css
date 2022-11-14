@@ -1,0 +1,196 @@
+/* --------------------- Hero and nav section ---------------------*/
+nav{
+    background-color: var(--gray-color);
+    padding: 20px 5%;
+}
+
+/* --------------------- Kitchen section ---------------------*/
+.kitchen{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kitchen p{
+    width: 100%;
+}
+
+.kitchen .row{
+    position: relative;
+    padding: min(30vw, 160px) 0;
+    color: white;
+
+    background-image: url(../imgs/team_imgs/kitchen.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.kitchen .row:last-child{
+    background-image: url(../imgs/team_imgs/kitchen-half2-full.jpg);
+}
+
+.kitchen .row .title{
+    position: relative;
+    z-index: 2;
+}
+
+.kitchen-row-filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+
+    z-index: 1;
+    z-index: 1;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------- Chef section ---------------------*/
+.our-chef{
+    background-color: var(--section-background);
+    padding-top: min(30vw, 77px);
+}
+
+.our-chef .title p{
+    width: 100%;
+}
+
+.our-chef .title .chef-signature-team{
+    width: 100%;
+    font-family: signature-collection;
+    font-size: 2.5em;
+}
+
+.chef-img{
+    height: min(125vw, 1000px);
+    margin: auto;
+
+    background-image: url(../imgs/team_imgs/chef.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* --------------------- Staff section ---------------------*/
+.our-staff{
+    padding: min(30vw, 77px) 0;
+}
+
+.our-staff .title p{
+    margin-bottom: 0;
+}
+
+.staff-box-container{
+    padding: min(20vw, 100px) 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: min(6vw, 30px);
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.staff-box{
+    aspect-ratio: 0.768224299065420 / 1;
+    height: min(100vw, 535px);
+    text-align: center;
+
+    box-shadow: 1px 1px 35px rgba(0, 0, 0, .15);
+}
+
+.staff-box-img{
+    height: 70%;
+    background-image: url(../imgs/team_imgs/staff/staff1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.staff-box:nth-child(2) .staff-box-img{
+    background-image: url(../imgs/team_imgs/staff/staff2.jpg);
+}
+
+.staff-box:nth-child(4) .staff-box-img{
+    background-image: url(../imgs/team_imgs/staff/staff3.jpg);
+}
+
+.staff-box-content{
+    display: flex;
+    flex-direction: column;
+    gap: min(2vw, 20px);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    height: 30%;
+}
+
+.staff-social-media{
+    display: flex;
+    gap: min(6vw, 30px);
+}
+
+.staff-social-media > *{
+    font-size: 2em;
+    padding: 0;
+    color: black;
+}
+
+.staff-box-container > div img{
+    width: min(10vw, 100%);
+}
+
+.staff-box-container .arrows-mobile{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+}
+
+.left-mobile, .right-mobile{
+    display: flex;
+    justify-content: center;
+}
+
+.staff-box-container .left, .staff-box-container .right{
+    display: none;
+}
+
+.staff-group-imgs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.staff-group-imgs .group-img{
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.staff-group-imgs .group-img:first-child{
+    height: min(100vw, 600px);
+    background-image: url(../imgs/team_imgs/staff/fullteam1.jpg);
+}
+
+.group-row:nth-child(2) .group-img{
+    height: min(120vw, 850px);
+    background-image: url(../imgs/team_imgs/staff/fullteam2.jpg);
+}
+
+.group-row:last-child .group-img{
+    height: min(100vw, 600px);
+    background-image: url(../imgs/team_imgs/staff/fullteam3.jpg);
+}
+
+.group-row .group-text{
+    padding: min(20vw, 200px) min(8vw, 200px);
+    text-align: center;
+}

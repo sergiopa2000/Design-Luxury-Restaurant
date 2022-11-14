@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+:root{
+    --main-color: white;
+    --secondary-color: #F05A24;
+    --gray-color: #191919; 
+    --section-background: #F4EFE1;
+}
+@font-face {
+    font-family: signature-collection;
+    src: url(../fonts/Signatgure/Signature\ Collection.ttf);
+}
+
+@font-face {
+    font-family: signature-home;
+    src: url(../fonts/Signature_home/Thomson\ Signate.otf);
+}
+
+body, html{
+    scroll-behavior: smooth;
+    height: 100%;
+    font-weight: 200;
+    font-family: "Work Sans";
+    font-size: 4vw;
+}
+
+p{
+    letter-spacing: 0.05em;
+    font-size: 1em;
+}
+
+h1{
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+h3{
+    font-size: 1.8em;
+}
+
+h3 span{
+    color:black;
+    font-weight: 600;
+}
+
+h4{
+    margin-bottom: min(2vw, 20px);
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+}
+
+span{
+    color: var(--secondary-color);
+}
+
+a{
+    transition: all .5s ease;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.title{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title p{
+    width: 85%;
+    margin: 20px auto;
+}
+
+/* --------------------- Hero and nav section ---------------------*/
+.nav-menu, .nav-reserve{
+    display: none;
+}
+
+nav{
+    padding: 10px 5% 0 5%;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img{
+    width: min(70vw, 150px);
+    height: 100%;
+    background-image: url(../imgs/home_imgs/logo.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.collapsed {
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+}
+
+/* --------------------- partners section ---------------------*/
+.footer{
+    color: white;
+    width: 100%;
+}
+
+.footer-top{
+    background-color: var(--gray-color);
+    padding: min(10vw, 60px) min(10vw, 50px);
+}
+
+.footer-logo{
+    width: 100%;
+    height: min(10vw, 120px);
+
+    display: inline-block;
+
+    background-image: url(../imgs/home_imgs/logo.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.footer-legend{
+    display: none;
+}
+
+.newsletter{
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.newsletter p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer form{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer form input:focus::placeholder {
+    color: transparent;
+}
+
+.footer form input[type=text]{
+    color: white;
+    font-size: .9em;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, .7);
+
+    outline: 0;
+    background-color: var(--gray-color);
+}
+
+.footer form input[type=submit]{
+    font-size: 1em;
+    transition: all .5s ease;
+    cursor: pointer;
+
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, .7);
+
+    outline: 0;
+    background-color: var(--gray-color);
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer form input[type=submit]:hover{
+    background-color: var(--main-color);
+    color: black;
+}
+
+.footer-top-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-row-title{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer-row-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: white;
+    width: 100%;
+
+}
+
+.footer-top-left .menu{
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.footer-top-left .menu > *{
+    padding: 0;
+}
+
+.footer-top-left .menu > *:hover{
+    color: var(--secondary-color);
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info > *{
+    display: flex;
+    gap: 13px;
+}
+
+.contact-info a{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.contact-info-icon{
+    width: 18px;
+    text-align: center;
+}
+
+.contact-info a{
+    padding: 0;
+    text-transform: none;
+}
+
+.contact-info a:hover{
+    color: var(--secondary-color);
+}
+
+.footer-bottom{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    text-align: center;
+    padding: 30px 0;
+    background-color: black;
+}
+
+.terms, .copyright{
+    width: 90%
+}
+
+.footer-bottom .terms{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-bottom .terms a:first-child{
+    position: relative;
+}
+
+.footer-bottom .terms a:first-child::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-right: 1px solid var(--main-color);
+    right: -24px;
+}
+
+.footer-bottom a{
+    text-transform: none;
+    padding: 0;
+}
+
+.footer-bottom a:hover{
+    color: var(--secondary-color);
+}
+
+.copyright span{
+    font-weight: 400;
+}
+
+.footer-bottom-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.footer-bottom-text > *{
+    margin: auto;
+}
+
+.footer-bottom .social-media{
+    display: flex;
+    gap: min(8vw, 30px);
+    font-size: min(10vw, 35px);
+}
+
+.footer-bottom .social-media a:hover{
+    color: var(--secondary-color);
+}

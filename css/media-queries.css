@@ -1,0 +1,572 @@
+@media (min-width: 600px){
+    body{
+        font-size: 2.5vw;
+    }
+
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv HOME vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    .gallery-photo{
+        flex-basis: 48vw;
+
+        padding-bottom: 48vw;
+        margin: 0;
+    }
+
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv TEAM vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- Kitchen section ---------------------*/
+    .kitchen p{
+        width: 80%;
+    }
+}
+
+@media (min-width: 900px){
+    body{
+        font-size: 20px;
+    }
+
+    nav{
+        padding: 20px 5%;
+        height: 80px;
+    }
+    
+    .logo-img{
+        width: min(70vw, 200px);
+        height: 100%;
+        background-image: url(../imgs/home_imgs/logo.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .title:not(.middle-band .title, .home-gallery .title, .local .title, .our-chef .title, .our-staff .title){
+        text-align: justify;
+    }
+
+    .title p{
+        width: 100%;
+        max-width: 800px;
+    }z
+
+    h1{
+        font-size: 3.5em;
+        line-height: 1.2;
+    }
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv HOME vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- Hero and nav section ---------------------*/
+    .hero{
+        height: 100vh;
+    }
+
+    .collapsed{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+        gap: 30px;
+        white-space: nowrap;
+    }
+
+    .nav-menu li{
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-menu a{
+        padding: 0;
+    }
+
+    .nav-menu a:hover{
+        color: var(--secondary-color);
+    }
+
+    .legend{
+        width: 70%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /* --------------------- Our history section ---------------------*/
+    .our-history{
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .history-left, .history-right{
+        padding: 0 40px;
+        position: relative;
+        flex: 1;
+    }
+
+    .history-left{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 770px;
+
+        background-image: url(../imgs/home_imgs/our-history.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .history-left .history-text:first-child{
+        margin-top: 115px;
+    }
+
+    .history-left .history-text:last-child{
+        margin-bottom: 115px;
+    }
+
+    .history-right::before, .history-right::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 80%;
+        height: 1px;
+
+        background-color: var(--secondary-color);
+    }
+
+    .history-right::before{
+        top: -300px;
+    }
+
+    .history-right::after{
+        bottom: -300px;
+    }
+
+    .history-text{
+        width: 100%;
+    }
+
+    /* --------------------- Chef signature section ---------------------*/
+    .chef-signature{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        align-content: center;
+        padding: 200px 30px;
+    }
+
+    .signature-img-container{
+        flex: 1;
+        max-width: 782px;
+    }
+
+    .signature-img{
+        margin: 0;
+        width: 100%;
+        padding-bottom: 100%;
+        height: 0;
+    }
+
+    .chef-signature .title{
+        flex: 1;
+    }
+
+    /* --------------------- Partners section ---------------------*/
+
+    .partners{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .partner-img{
+        flex: 1;
+
+    }
+
+    .partner-img:first-child{
+        margin: 0;
+    }
+
+    .partner-img:nth-child(4), .partner-img:last-child{
+        margin-top: 0;
+    }
+
+    /* --------------------- Footer section ---------------------*/
+    .footer-logo{
+        height: 130px;
+    }
+
+    .footer-top-left .menu{
+        gap: 40px;
+    }
+
+    .terms, .copyright{
+        width: 100%;
+    }
+
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv TEAM vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- Kitchen section ---------------------*/
+    .kitchen{
+        padding: 200px 0;
+    }
+    .kitchen .row, .kitchen .row:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 5%;
+
+        padding: 50px;
+        color: black;
+        background-image: none;
+    }
+    
+    .kitchen .row .title{
+        margin: 0;
+        width: 100%;
+        max-width: 620px;
+    }
+
+    .kitchen-row-filter{
+        display: none;
+    }
+
+    .kitchen-photos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+    }
+
+    .kitchen-photos div{
+        aspect-ratio: 0.5 / 1;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: min(40vw, 506px);
+    }
+
+    .kitchen-photos-up div:first-child{
+        transform: translateY(55px);
+        background-image: url(../imgs/team_imgs/kitchen-half1.jpg);
+    }
+
+    .kitchen-photos-up div:last-child{
+        transform: translateY(-55px);
+        background-image: url(../imgs/team_imgs/kitchen-half2.jpg);
+    }
+
+    .kitchen-photos-down div:first-child{
+        transform: translateY(-55px);
+        background-image: url(../imgs/team_imgs/kitchen-half21.jpg);
+    }
+
+    .kitchen-photos-down div:last-child{
+        transform: translateY(55px);
+        background-image: url(../imgs/team_imgs/kitchen-half22.jpg);
+    }
+}
+
+@media (min-width: 1230px){
+    /* --------------------- Hero and nav section ---------------------*/
+    nav{
+        padding: 30px 5%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .logo{
+        height: 100%;
+    }
+
+    .logo-img{
+        width: 250px;
+    }
+
+    .nav-menu{
+        justify-content: center;
+        gap: 4%;
+        flex: 5;
+    }
+
+    .nav-reserve{
+        flex-direction: 1;
+        display: block;
+        border: 1px solid var(--secondary-color);
+        color: var(--secondary-color);
+    }
+
+    .nav-reserve:hover{
+        background-color: var(--secondary-color);
+        color: var(--main-color);
+    }
+
+    .legend{
+        width: 650px;
+        text-align: left;
+        top: 25%;
+        left: 8%;
+        transform: none;
+    }
+    
+    .legend p {
+        margin: 30px 0;
+        width: 60%;
+    }
+
+    .legend-buttons{
+        justify-content: flex-start;
+    }
+    
+    /* --------------------- Our history section ---------------------*/
+    .history-left, .history-right{
+        padding: 0 7%;
+    }
+
+    /* --------------------- Chef signature section ---------------------*/
+    .chef-signature{
+        padding: 200px 8%;
+        gap: 80px;
+    }
+    .chef-signature .title p{
+        width: 93%;
+        margin: 30px 0;
+    }
+
+    /* --------------------- Middle band section ---------------------*/
+    .middle-band{
+        height: 70vh;
+    }
+
+    .middle-band .title{
+        width: 50%;
+    }
+
+    /* --------------------- local section ---------------------*/
+    .local{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 200px 100px;
+    }
+
+    .local-row .title{
+        text-align: justify;
+    }
+
+    .local-row .title{
+        
+        flex: 1;
+    }
+
+    .local-row:first-child .title{
+        padding-left: 4%;
+    }
+
+    .local-row:last-child .title{
+        padding-right: 4%;
+    }
+
+    .local-row .title p{
+        width: 100%;
+    }
+
+    .local-row:first-child .local-img, .local-row:last-child .local-img{
+        flex: 1.5;
+    }
+
+    /* --------------------- Home gallery section ---------------------*/
+    .home-gallery{
+        padding: 200px 0;
+    }
+
+    .gallery-photo{
+        flex-basis: 32.6vw;
+
+        padding-bottom: 32.6vw;
+        margin: 0;
+    }
+
+    /* --------------------- Footer section ---------------------*/
+    .footer-logo{
+        width: 384px;
+    }
+
+    .footer-top{
+        padding: 60px 7% 100px 7%;
+    }
+
+    .footer-top-content{
+        padding-top: 50px;
+        display: flex;
+    }
+
+    .footer-top-content > *{
+        flex: 1;
+    }
+
+    .footer-top-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        align-content: center;
+
+        order: 1;
+    }
+
+    .footer-top-right-content{
+        box-sizing: border-box;
+        width: 450px;
+        height: 300px;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer-legend{
+        display: block;
+    }
+
+    .newsletter{
+        margin: 0;
+    }
+
+    .footer-legend{
+        font-size: .8em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-bottom{
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 50px 7%;
+    }
+
+    .footer-bottom .terms{
+        justify-content: flex-start;
+    }
+
+    .footer-bottom .social-media{
+        font-size: 45px;
+        gap: 50px;
+    }
+
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv TEAM vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- Chef section ---------------------*/
+    .our-chef{
+        padding: 50px 100px 0 100px;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+    }
+
+    .our-chef .title{
+        margin: 0;
+        padding-top: 80px;
+        width: fit-content;
+        
+        text-align: justify;
+        order: 1;
+    }
+
+    .our-chef .title h1{
+        text-align: left;
+        order: 1;
+    }
+
+    .our-chef .title p{
+        max-width: 700px;
+        margin: 20px 0 40px 0;
+    }
+
+    .chef-signature-team{
+        text-align: center;
+    }
+
+    .chef-img{
+        aspect-ratio: 0.77678571428571 / 1;
+        margin: 0;
+        height: unset;
+        width: min(50vw, 783px);
+    }
+    /* --------------------- Staff section ---------------------*/
+    .our-staff{
+        padding: 200px 0;
+    }
+
+    .staff-group-imgs{
+        padding: 0 100px;
+    }
+
+    .group-row{
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+    .group-row > .group-img{
+        flex: 1.5;
+    }
+
+    .group-row .group-text{
+        flex: 1;
+        text-align: justify;
+        padding: 0 3%;
+    }
+
+    .staff-group-imgs .group-img{
+        transition: filter .5s ease;
+        width: 55%;
+    }
+
+    .staff-group-imgs .group-img:hover{
+        -webkit-filter: brightness(.5);
+        filter: brightness(.5);
+    }
+
+    .group-row:nth-child(2) .group-img{
+        width: 100%;
+    }
+    
+    .group-row:last-child .group-img{
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 1600px){
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv TEAM vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- Chef section ---------------------*/
+    .our-chef{
+        gap: 80px;
+    }
+
+    .our-chef .title{
+        padding-top: 200px;
+    }
+    /* --------------------- Staff section ---------------------*/
+    
+    .staff-box-container .arrows-mobile{
+        display: none;
+    }
+    
+    .staff-box-container .left, .staff-box-container .right{
+        display: block;
+    }
+
+    .staff-box-container .left{
+        margin-right: 40px;
+    }
+
+    .staff-box-container .right{
+        margin-left: 40px;
+    }
+    
+    .group-row .group-text {
+        padding: 0 7%;
+    }
+}

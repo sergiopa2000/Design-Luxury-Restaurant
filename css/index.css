@@ -1,0 +1,358 @@
+/* --------------------- Hero and nav section ---------------------*/
+.hero{
+    position: relative;
+    min-height: max(70vh, 500px);
+
+    background-image: url(../imgs/home_imgs/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 73% center;
+}
+
+.hero *{
+    z-index: 2;
+}
+
+.hero-filter{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.legend{
+    width: 90%;
+    text-align: center;
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    color: white;
+}
+
+.legend p{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.legend-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.legend a:first-of-type{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.legend a:first-of-type:hover{
+    background-color: #c04619;
+}
+
+.legend a:last-of-type{
+    border: 1px solid var(--main-color);
+}
+
+.legend a:last-of-type:hover{
+    background-color: var(--main-color);
+    color: black;
+}
+
+/* --------------------- Our history section ---------------------*/
+.our-history{
+    padding: 77px 0;
+}
+
+.our-history p{
+    text-align: justify;
+}
+
+.history-text{
+    width: 90%;
+    margin: 0 auto 60px auto;
+}
+
+.history-right .history-text{
+    margin-bottom: 0;
+}
+
+.our-history .signature{
+    margin-top: 50px;
+    font-size: 4em;
+    font-family: signature-home;
+    text-align: center;
+}
+
+/* --------------------- Chef signature section ---------------------*/
+.chef-signature{
+    padding: 77px 0;
+    background-color: var(--section-background);
+}
+
+.chef-signature p{
+    width: 100%;
+}
+
+.chef-signature a{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.chef-signature a:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.signature-img{
+    border-radius: 50%;
+    width: min(90vw, 762px);
+    height: min(90vw, 762px);
+    margin: 30px auto 0 auto;
+
+
+    background-image: url(../imgs/home_imgs/chef-signature.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* --------------------- Middle Band section ---------------------*/
+.middle-band{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    position: relative;
+    width: 100%;
+    height: 50vh;
+
+    background-image: url(../imgs/home_imgs/middle-img.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.middle-band-filter{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+}
+
+.middle-band .title{
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.middle-band .title h1{
+    margin-bottom: 30px;
+}
+
+.middle-band-buttons{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+    gap: 10px;
+}
+
+.middle-band-buttons a:first-of-type{
+    background-color: var(--secondary-color);
+}
+
+.middle-band-buttons a:first-of-type:hover{
+    background-color: #c04619;
+}
+
+.middle-band-buttons a:last-of-type{
+    position: relative;
+    text-transform: none;
+    padding: 0;
+}
+
+.middle-band-buttons a:last-of-type::before{
+    transition: all 1s ease;
+    content: "";
+    width: 0;
+    height: 10px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    top: 8px;
+}
+
+.middle-band-buttons a:last-of-type:hover::before{
+    width: 93%;
+}
+
+
+/* --------------------- Local section ---------------------*/
+.local{
+
+    padding: 77px 0;
+}
+
+.local-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.local-row .title{
+    margin: 80px 0;
+    flex: 1;
+    flex-basis: 600px;
+}
+
+.local-row .title p{
+    width: 80%;
+    margin-bottom: 0;
+}
+
+.local-row:first-child .local-img, .local-row:last-child .local-img{
+    flex: 1.5;
+    flex-basis: 600px;
+    height: min(100vw, 761px);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.local-row:first-child .local-img{
+    background-image: url(../imgs/home_imgs/our_local/local1.jpg);
+}
+
+.local-row:last-child .local-img{
+    background-image: url(../imgs/home_imgs/our_local/local3.jpg);
+}
+
+.local-row:nth-child(2) .local-img{
+    width: 100%;
+    height: min(80vw, 573px);
+
+    background-image: url(../imgs/home_imgs/our_local/local2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* --------------------- gallery section ---------------------*/
+.home-gallery{
+    background-color: var(--section-background);
+    padding: 77px 0;
+}
+
+.home-gallery .title a{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.home-gallery .title a:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.home-gallery-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .4vw;
+}
+
+.gallery-photo{
+    transition: filter .3s ease;
+    flex-basis: 98%;
+
+    padding-bottom: 98%;
+    margin: auto;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gallery-photo:hover{
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+}
+
+.gallery-photo:first-child{
+    background-image: url(../imgs/home_imgs/gallery/gallery1.jpg);
+}
+
+.gallery-photo:nth-child(2){
+    background-image: url(../imgs/home_imgs/gallery/gallery2.jpg);
+}
+
+.gallery-photo:nth-child(3){
+    background-image: url(../imgs/home_imgs/gallery/gallery3.jpg);
+}
+
+.gallery-photo:nth-child(4){
+    background-image: url(../imgs/home_imgs/gallery/gallery4.jpg);
+}
+
+.gallery-photo:nth-child(5){
+    background-image: url(../imgs/home_imgs/gallery/gallery5.jpg);
+}
+
+.gallery-photo:last-child{
+    background-image: url(../imgs/home_imgs/gallery/gallery6.jpg);
+}
+
+/* --------------------- partners section ---------------------*/
+.partners{
+    padding: min(10vw, 40px) 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.partner-img{
+    display: flex;
+    align-items: center;
+    opacity: .3;
+    flex-basis: 33%;
+
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    height: min(15vw, 50px);
+
+    transition: all 0.5s ease;
+}
+.partner-img:nth-child(2), .partner-img:nth-child(3), .partner-img:last-child{
+    height: min(18vw, 60px);
+}
+
+.partner-img:nth-child(4), .partner-img:last-child{
+    margin-top: min(5vw, 20px);
+}
+
+.partner-img *{
+    width: 100%;
+    height: 100%;
+}
+
+.partner-img:hover{
+    opacity: 1
+}
