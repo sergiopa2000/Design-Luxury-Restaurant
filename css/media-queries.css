@@ -3,14 +3,6 @@
         font-size: 2.5vw;
     }
 
-    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv HOME vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
-    .gallery-photo{
-        flex-basis: 48vw;
-
-        padding-bottom: 48vw;
-        margin: 0;
-    }
-
     /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv TEAM vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
     /* --------------------- Kitchen section ---------------------*/
     .kitchen p{
@@ -37,19 +29,28 @@
         background-repeat: no-repeat;
     }
     
-    .title:not(.middle-band .title, .home-gallery .title, .local .title, .our-chef .title, .our-staff .title){
+    .title:not(.middle-band .title, .home-gallery .title, .local .title, .our-chef .title, .our-staff .title, .main-dishes .title, .tasting-menus .title){
         text-align: justify;
     }
 
     .title p{
-        width: 100%;
         max-width: 800px;
+        width: 100%;
+    }
+
+    .title:not(.middle-band .title, .home-gallery .title, .local .title, .our-chef .title, .our-staff .title, .main-dishes .title, .tasting-menus .title) p{
+        margin: 20px 0;
     }z
 
     h1{
         font-size: 3.5em;
         line-height: 1.2;
     }
+
+    .mobile-hidden{
+        display: block;
+    }
+
     /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv HOME vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
     /* --------------------- Hero and nav section ---------------------*/
     .hero{
@@ -262,6 +263,13 @@
         transform: translateY(55px);
         background-image: url(../imgs/team_imgs/kitchen-half22.jpg);
     }
+
+
+    
+
+    .gallery-photos .gallery-photo{
+        width: 49.6%;
+    }
 }
 
 @media (min-width: 1230px){
@@ -372,18 +380,6 @@
 
     .local-row:first-child .local-img, .local-row:last-child .local-img{
         flex: 1.5;
-    }
-
-    /* --------------------- Home gallery section ---------------------*/
-    .home-gallery{
-        padding: 200px 0;
-    }
-
-    .gallery-photo{
-        flex-basis: 32.6vw;
-
-        padding-bottom: 32.6vw;
-        margin: 0;
     }
 
     /* --------------------- Footer section ---------------------*/
@@ -536,6 +532,30 @@
     .group-row:last-child .group-img{
         margin-left: auto;
     }
+
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv MENU vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- Main dishes section ---------------------*/
+    .main-dishes{
+        padding: 200px 0;
+    }
+
+    .main-dishes-content .top{
+        gap: 150px;
+    }
+
+    /* --------------------- Tasting Menus section ---------------------*/
+    .tasting-menus{
+        padding: 200px 0;
+    }
+
+    /* --------------------- Menu Gallery section ---------------------*/
+    .menu-gallery{
+        padding: 200px 0;
+    }
+
+    .gallery-photos .gallery-photo{
+        width: 33%;
+    }
 }
 
 @media (min-width: 1600px){
@@ -569,4 +589,7 @@
     .group-row .group-text {
         padding: 0 7%;
     }
+
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv MENU vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- Tasting Menus section ---------------------*/
 }

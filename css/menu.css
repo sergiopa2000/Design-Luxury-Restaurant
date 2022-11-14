@@ -1,0 +1,150 @@
+/* --------------------- Hero and nav section ---------------------*/
+nav{
+    background-color: var(--gray-color);
+    padding: 20px 5%;
+}
+
+/* --------------------- Main dishes section ---------------------*/
+.main-dishes{
+    padding: min(30vw, 77px) 0;
+}
+
+.main-dishes-content{
+    display: flex;
+    flex-direction: column;
+    gap: min(16vw, 100px);
+    margin-top: min(8vw, 50px);
+}
+
+.main-dishes-content .top{
+    display: flex;
+    gap: min(10vw, 80px);
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.main-dishes-content img{
+    border-radius: 50%;
+}
+
+.main-dish-text{
+    max-width: min(80vw, 618px);
+}
+
+.main-dishes-content .top img{
+    width: min(80vw, 618px);
+    margin-bottom: min(5vw, 20px);
+}
+
+.main-dishes-content .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: min(8vw, 100px);
+}
+
+.main-dishes-content .bottom img{
+    width: min(35vw, 254px);
+}
+
+.main-dishes-content .bottom .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: min(8vw, 100px);
+}
+
+.main-dishes-content .bottom .row > div{
+    display: flex;
+    gap: min(3vw, 40px);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main-dishes-content .bottom .main-dish-text{
+    width: min(52vw, 330px);
+}
+
+/* --------------------- Tasting Menus section ---------------------*/
+.tasting-menus{
+    background-color: var(--section-background);
+    padding: min(30vw, 77px) 0;
+}
+
+.menu-selection-bar{
+    height: min(6vw, 30px);
+    margin-bottom: min(10vw, 70px);
+}
+
+.menu-selection-bar hr{
+    margin: 0;
+}
+
+.tasting-menus .menu hr{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.menu-selection-bar .selections{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: min(5vw, 100px);
+
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu-selection-bar .selections p{
+    cursor: pointer;
+    transition: color .3s ease;
+    padding: 0 min(2vw, 15px);
+    height: 100%;
+}
+.menu-selected{
+    border-bottom: 4px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.menus{
+    position: relative;
+}
+
+.menu{
+    transition: left 1s ease;
+    position: absolute;
+    top: 0;
+    left: 2000px;
+    width: min(80%, 1150px);
+    margin: 0 auto;
+}
+
+#menu-classic{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.menu p{
+    max-width: 550px;
+}
+
+.menu > div{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: min(5vw, 30px);
+    flex-wrap: wrap;
+}
+
+.menu-main-dishes{
+    margin-bottom: min(10vw, 70px);
+}
