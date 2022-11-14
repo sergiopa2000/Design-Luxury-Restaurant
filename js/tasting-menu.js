@@ -15,9 +15,8 @@ function handleClick(option){
                 menu.style.position = "relative";
                 menu.style.width = "min(80%, 1150px)";
                 menu.style.height = "100%";
-            }, 400) // OPCION 2: 300ms
+            }, 300) // OPCION 2: 300ms
             menu.style.left = "0";
-
         }else{
             if(menu.dataset.number < optionMenuElement.dataset.number){
                 menu.style.left = "-4000px";
@@ -29,7 +28,7 @@ function handleClick(option){
                 //menu.style.position = "absolute"; // OPCION 2
                 menu.style.width = "0";
                 menu.style.height = "0";
-            }, 400)
+            }, 300)
         }
     }
     removeSelected();

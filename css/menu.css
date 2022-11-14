@@ -115,15 +115,17 @@ nav{
 }
 
 .menus{
+    overflow: hidden;
     position: relative;
 }
 
 .menu{
-    transition: left 1s ease;
-    position: absolute;
+    transition: left .5s ease;
+    position: relative;
     top: 0;
-    left: 2000px;
-    width: min(80%, 1150px);
+    left: 4000px;
+    height: 0;
+    width: 0;
     margin: 0 auto;
 }
 
@@ -131,6 +133,8 @@ nav{
     position: relative;
     top: 0;
     left: 0;
+    width: min(80%, 1150px);
+    height: 100%;
 }
 
 .menu p{

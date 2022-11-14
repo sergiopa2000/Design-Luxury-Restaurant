@@ -270,8 +270,11 @@
     .gallery-photos .gallery-photo{
         width: 49.6%;
     }
-}
 
+    .menu{
+        transition: left 1s ease;
+    }
+}
 @media (min-width: 1230px){
     /* --------------------- Hero and nav section ---------------------*/
     nav{
