@@ -99,7 +99,7 @@ nav{
 
 .staff-box{
     aspect-ratio: 0.768224299065420 / 1;
-    height: min(100vw, 535px);
+    height: min(100vw, 595px);
     text-align: center;
 
     box-shadow: 1px 1px 35px rgba(0, 0, 0, .15);
@@ -191,6 +191,6 @@ nav{
 }
 
 .group-row .group-text{
-    padding: min(20vw, 200px) min(8vw, 200px);
-    text-align: center;
+    padding: min(20vw, 100px) min(8vw, 200px);
+    text-align: justify;
 }

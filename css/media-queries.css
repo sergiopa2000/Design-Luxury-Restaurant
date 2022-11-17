@@ -21,6 +21,7 @@
     }
     
     .logo-img{
+        cursor: pointer;
         width: min(70vw, 200px);
         height: 100%;
         background-image: url(../imgs/home_imgs/logo.png);
@@ -29,7 +30,7 @@
         background-repeat: no-repeat;
     }
     
-    .title:not(.middle-band .title, .home-gallery .title, .local .title, .our-chef .title, .our-staff .title, .main-dishes .title, .tasting-menus .title){
+    .title:not(.middle-band .title, .gallery .title, .local .title, .our-chef .title, .our-staff .title, .main-dishes .title, .tasting-menus .title, .contact-form .title, .reservations .title){
         text-align: justify;
     }
 
@@ -38,7 +39,7 @@
         width: 100%;
     }
 
-    .title:not(.middle-band .title, .home-gallery .title, .local .title, .our-chef .title, .our-staff .title, .main-dishes .title, .tasting-menus .title) p{
+    .title:not(.middle-band .title, .gallery .title, .local .title, .our-chef .title, .our-staff .title, .main-dishes .title, .tasting-menus .title) p{
         margin: 20px 0;
     }z
 
@@ -99,12 +100,15 @@
         flex: 1;
     }
 
-    .history-left{
-        color: white;
+    .history-right{
         display: flex;
         flex-direction: column;
-        gap: 770px;
+        gap: 150px;
+        flex: 1.5;
+    }
 
+    .history-left{
+        height: 1500px;
         background-image: url(../imgs/home_imgs/our-history.jpg);
         background-size: cover;
         background-position: center center;
@@ -119,28 +123,29 @@
         margin-bottom: 115px;
     }
 
-    .history-right::before, .history-right::after{
+    .history-text{
+        position: relative;
+        width: 100%;
+    }
+
+    .history-text:nth-child(2)::before, .history-text:nth-child(2)::after{
         content: "";
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
 
-        width: 80%;
+        width: 100%;
         height: 1px;
 
         background-color: var(--secondary-color);
     }
 
-    .history-right::before{
-        top: -300px;
+    .history-text:nth-child(2)::before{
+        top: -75px;
     }
 
-    .history-right::after{
-        bottom: -300px;
-    }
-
-    .history-text{
-        width: 100%;
+    .history-text:nth-child(2)::after{
+        bottom: -75px;
     }
 
     /* --------------------- Chef signature section ---------------------*/
@@ -265,7 +270,7 @@
     }
 
 
-    
+     /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv MENU vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
 
     .gallery-photos .gallery-photo{
         width: 49.6%;
@@ -326,10 +331,22 @@
     .legend-buttons{
         justify-content: flex-start;
     }
+
+    .gallery{
+        padding: 200px 0;
+    }
+        
+    .gallery-photos .gallery-photo{
+        width: 33%;
+    }
     
     /* --------------------- Our history section ---------------------*/
     .history-left, .history-right{
-        padding: 0 7%;
+        padding: 0 9%;
+    }
+
+    .history-text:nth-child(2)::before, .history-text:nth-child(2)::after{
+        width: 110%;
     }
 
     /* --------------------- Chef signature section ---------------------*/
@@ -357,7 +374,7 @@
         flex-direction: column;
         gap: 20px;
 
-        padding: 200px 100px;
+        padding: 200px 40px;
     }
 
     .local-row .title{
@@ -370,15 +387,17 @@
     }
 
     .local-row:first-child .title{
-        padding-left: 4%;
+        padding-left: 2.5%;
     }
 
     .local-row:last-child .title{
-        padding-right: 4%;
+        padding-right: 2.5%;
     }
 
     .local-row .title p{
         width: 100%;
+        margin: 20px 0;
+        margin-bottom: 0;
     }
 
     .local-row:first-child .local-img, .local-row:last-child .local-img{
@@ -416,7 +435,7 @@
     .footer-top-right-content{
         box-sizing: border-box;
         width: 450px;
-        height: 300px;
+        height: 250px;
         display: flex;
 
         flex-direction: column;
@@ -449,7 +468,7 @@
     }
 
     .footer-bottom .social-media{
-        font-size: 45px;
+        font-size: 40px;
         gap: 50px;
     }
 
@@ -493,47 +512,16 @@
         height: unset;
         width: min(50vw, 783px);
     }
+
     /* --------------------- Staff section ---------------------*/
-    .our-staff{
-        padding: 200px 0;
-    }
-
-    .staff-group-imgs{
-        padding: 0 100px;
-    }
-
-    .group-row{
-        display: flex;
-        align-items: center;
-        align-content: center;
-    }
-
-    .group-row > .group-img{
-        flex: 1.5;
-    }
-
     .group-row .group-text{
         flex: 1;
         text-align: justify;
-        padding: 0 3%;
+        padding: 150px 15%;
     }
 
     .staff-group-imgs .group-img{
-        transition: filter .5s ease;
-        width: 55%;
-    }
-
-    .staff-group-imgs .group-img:hover{
-        -webkit-filter: brightness(.5);
-        filter: brightness(.5);
-    }
-
-    .group-row:nth-child(2) .group-img{
-        width: 100%;
-    }
-    
-    .group-row:last-child .group-img{
-        margin-left: auto;
+        background-position-y: top;
     }
 
     /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv MENU vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
@@ -551,17 +539,68 @@
         padding: 200px 0;
     }
 
-    /* --------------------- Menu Gallery section ---------------------*/
-    .menu-gallery{
-        padding: 200px 0;
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv CONTACT vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- Contact Form section ---------------------*/
+    .contact-form{
+        padding: 200px 0 0 0;
     }
 
-    .gallery-photos .gallery-photo{
-        width: 33%;
+    .contact-form-content{
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, .2);
+        display: flex;
+        width: 70%;
+        margin: 80px auto 90px auto;
+    }
+
+    .contact-form-content form{
+        padding: 80px 80px;
+    }
+
+    .contact-form-right{
+        display: block;
+        padding: 50px 50px;
+        position: relative;
+        background-color: aquamarine;
+        background-image: url(../test.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    
+    .contact-form-right p{
+        color: white;
+        font-family: "Libre Baskerville";
+        font-size: 2.6em;
+    }
+    
+    .form-social-media{
+        bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        align-items: flex-end;
+        gap: 40px;
+        align-content: flex-end;
+        font-size: 2.2em;
+    }
+    
+    .form-social-media a{
+        padding: 0;
+    }
+
+    /* --------------------- Reservation Interface section ---------------------*/
+    .reservations{
+        padding: 200px 0;
     }
 }
 
 @media (min-width: 1600px){
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv HOME vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- local section ---------------------*/
+    .local{
+        padding: 200px 100px;
+    }
+
     /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv TEAM vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
     /* --------------------- Chef section ---------------------*/
     .our-chef{
@@ -591,6 +630,52 @@
     
     .group-row .group-text {
         padding: 0 7%;
+    }
+
+    .our-staff{
+        padding: 200px 0;
+    }
+
+    .our-staff .title p{
+        margin: 20px auto 0 auto;
+    }
+
+    .staff-group-imgs{
+        padding: 0 100px;
+    }
+
+    .group-row{
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+    .group-row > .group-img{
+        flex: 1.5;
+    }
+
+    .group-row .group-text{
+        flex: 1;
+        text-align: justify;
+        padding: 0 2%;
+    }
+
+    .staff-group-imgs .group-img{
+        transition: filter .5s ease;
+        width: 55%;
+    }
+
+    .staff-group-imgs .group-img:hover{
+        -webkit-filter: brightness(.5);
+        filter: brightness(.5);
+    }
+
+    .group-row:nth-child(2) .group-img{
+        width: 100%;
+    }
+    
+    .group-row:last-child .group-img{
+        margin-left: auto;
     }
 
     /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv MENU vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/

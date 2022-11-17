@@ -65,7 +65,7 @@
 
 /* --------------------- Our history section ---------------------*/
 .our-history{
-    padding: 77px 0;
+    padding: min(20vw, 77px) 0;
 }
 
 .our-history p{
@@ -74,7 +74,13 @@
 
 .history-text{
     width: 90%;
-    margin: 0 auto 60px auto;
+    margin: 0 auto min(5vw, 60px) auto;
+}
+
+.history-right{
+    display: flex;
+    flex-direction: column;
+    gap: min(10vw, 150px);
 }
 
 .history-right .history-text{
@@ -82,7 +88,7 @@
 }
 
 .our-history .signature{
-    margin-top: 50px;
+    margin-top: min(10vw, 50px);
     font-size: 4em;
     font-family: signature-home;
     text-align: center;
@@ -90,8 +96,12 @@
 
 /* --------------------- Chef signature section ---------------------*/
 .chef-signature{
-    padding: 77px 0;
+    padding: min(20vw, 77px) 0;
     background-color: var(--section-background);
+}
+
+.chef-signature .title p{
+    text-align: justify;
 }
 
 .chef-signature p{
@@ -130,7 +140,7 @@
 
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: min(100vw, 50vh);
 
     background-image: url(../imgs/home_imgs/middle-img.jpg);
     background-size: cover;
@@ -154,7 +164,7 @@
 }
 
 .middle-band .title h1{
-    margin-bottom: 30px;
+    margin-bottom: min(5vw, 30px);
 }
 
 .middle-band-buttons{
@@ -199,8 +209,11 @@
 
 /* --------------------- Local section ---------------------*/
 .local{
-
     padding: 77px 0;
+}
+
+.local .title p{
+    text-align: justify;
 }
 
 .local-row{
@@ -218,7 +231,7 @@
 }
 
 .local-row .title p{
-    width: 80%;
+    width: 90%;
     margin-bottom: 0;
 }
 
@@ -248,6 +261,10 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+/* --------------------- Home gallery section ---------------------*/
+.home-gallery{
+    background-color: var(--section-background);
 }
 
 /* --------------------- partners section ---------------------*/

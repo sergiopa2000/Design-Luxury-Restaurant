@@ -1,3 +1,6 @@
+.menu-container{
+    overflow-x: hidden;
+}
 /* --------------------- Hero and nav section ---------------------*/
 nav{
     background-color: var(--gray-color);
@@ -151,4 +154,9 @@ nav{
 
 .menu-main-dishes{
     margin-bottom: min(10vw, 70px);
+}
+
+/* --------------------- Menu Gallery section ---------------------*/
+.menu-gallery{
+    padding: 30px 0;
 }
