@@ -20,14 +20,10 @@
         height: 80px;
     }
     
-    .logo-img{
+    .logo .logo-img{
         cursor: pointer;
         width: min(70vw, 200px);
         height: 100%;
-        background-image: url(../imgs/home_imgs/logo.png);
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
     }
     
     .title:not(.middle-band .title, .gallery .title, .local .title, .our-chef .title, .our-staff .title, .main-dishes .title, .tasting-menus .title, .contact-form .title, .reservations .title){
@@ -41,15 +37,11 @@
 
     .title:not(.middle-band .title, .gallery .title, .local .title, .our-chef .title, .our-staff .title, .main-dishes .title, .tasting-menus .title) p{
         margin: 20px 0;
-    }z
+    }
 
     h1{
         font-size: 3.5em;
         line-height: 1.2;
-    }
-
-    .mobile-hidden{
-        display: block;
     }
 
     /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv HOME vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
@@ -57,28 +49,29 @@
     .hero{
         height: 100vh;
     }
+    nav input[type="checkbox"]:checked ~ .logo .logo-img {
+        position: relative;
+        height: 100%;
+    }
 
-    .collapsed{
+    nav .checkbox, nav .hamburger-lines{
         display: none;
     }
 
-    .nav-menu{
-        display: flex;
-        gap: 30px;
-        white-space: nowrap;
-    }
-
-    .nav-menu li{
-        display: flex;
+    nav .nav-menu{
+        position: static;
+        background-color: transparent;
+        
+        height: 100%;
+        transform: translate(0);
+        flex-direction: row;
         align-items: center;
-    }
-    
-    .nav-menu a{
-        padding: 0;
+        justify-content: flex-end;
+        gap: 3%;
     }
 
-    .nav-menu a:hover{
-        color: var(--secondary-color);
+    nav .nav-menu li{
+        font-size: 1em;
     }
 
     .legend{
@@ -182,15 +175,21 @@
 
     .partner-img{
         flex: 1;
-
+        height: 50px;
+    }
+    
+    .partner-img:nth-child(2), .partner-img:nth-child(3), .partner-img:last-child{
+        height: 60px;
     }
 
     .partner-img:first-child{
         margin: 0;
+       
     }
 
     .partner-img:nth-child(4), .partner-img:last-child{
         margin-top: 0;
+        
     }
 
     /* --------------------- Footer section ---------------------*/
@@ -198,7 +197,7 @@
         height: 130px;
     }
 
-    .footer-top-left .menu{
+    .footer-top-left .footer-menu{
         gap: 40px;
     }
 
@@ -270,7 +269,7 @@
     }
 
 
-     /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv MENU vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv MENU vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
 
     .gallery-photos .gallery-photo{
         width: 49.6%;
@@ -278,6 +277,12 @@
 
     .menu{
         transition: left 1s ease;
+    }
+
+    /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv CONTACT vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /* --------------------- Reservation Interface section ---------------------*/
+    .monthDayContainer, .schedules > *{
+        font-size: 1em;
     }
 }
 @media (min-width: 1230px){
@@ -289,22 +294,17 @@
         align-content: center;
     }
 
-    .logo{
-        height: 100%;
-    }
-
-    .logo-img{
+    .logo .logo-img{
         width: 250px;
     }
 
-    .nav-menu{
+    nav .nav-menu{
         justify-content: center;
         gap: 4%;
         flex: 5;
     }
 
     .nav-reserve{
-        flex-direction: 1;
         display: block;
         border: 1px solid var(--secondary-color);
         color: var(--secondary-color);
@@ -561,7 +561,7 @@
         padding: 50px 50px;
         position: relative;
         background-color: aquamarine;
-        background-image: url(../test.jpg);
+        background-image: url(../imgs/contact_imgs/contact-back.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -583,6 +583,10 @@
         align-content: flex-end;
         font-size: 2.2em;
     }
+
+    .form-social-media a:hover{
+        color: var(--secondary-color);
+    }
     
     .form-social-media a{
         padding: 0;
@@ -592,6 +596,27 @@
     .reservations{
         padding: 200px 0;
     }
+
+    .reservation-interface{
+        width: 75%;
+    }
+
+    .calendar-row{
+        gap: 30px;
+    }
+
+    .monthDayContainer{
+        width: 75px;
+    }
+
+    .schedules{
+        gap: 40px;
+    }
+
+    .schedules > *{
+        width: 140px;
+    }
+    
 }
 
 @media (min-width: 1600px){
@@ -665,11 +690,6 @@
         width: 55%;
     }
 
-    .staff-group-imgs .group-img:hover{
-        -webkit-filter: brightness(.5);
-        filter: brightness(.5);
-    }
-
     .group-row:nth-child(2) .group-img{
         width: 100%;
     }
@@ -680,4 +700,11 @@
 
     /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv MENU vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
     /* --------------------- Tasting Menus section ---------------------*/
+    .interface-content{
+        flex-direction: row;
+    }
+
+    .interface-content > *{
+        flex: 1;
+    }
 }

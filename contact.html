@@ -16,6 +16,12 @@
 <body>
     <div class="container">
         <nav>
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
             <div class="logo">
                 <a href="index.html"><div class="logo-img"></div></a>
             </div>
@@ -23,16 +29,15 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#our-history">Our history</a></li>
                 <li><a href="team.html">Team</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="menu.html#gallery">Gallery</a></li>
+                <li><a href="" class="active-nav">Contact</a></li>
             </ul>
-            <a href="#" class="nav-reserve">Reserve now</a>
-            <div class="collapsed"></div>
+            <a href="contact.html#reservations" class="nav-reserve">Reserve now</a>
         </nav>
 
         <section class="contact-form">
-            <div class="title">
+            <div class="title" id="contact-form">
                 <h4>contact us</h4>
                 <h1>Drop us <span>a line</span></h1>
             </div>
@@ -74,31 +79,164 @@
             </div>
             <div class="contact-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1610.881336629153!2d-115.11793396985169!3d36.14799140384918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c50bbdac92c1%3A0x3ca3eb073de41a4a!2sArelis!5e0!3m2!1ses!2ses!4v1668714094097!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- 
             </div>
         </section>
 
         <section class="reservations">
-            <div class="title">
+            <div class="title" id="reservations">
                 <h4>reservations</h4>
                 <h1>At your <span>service</span></h1>
             </div>
             <div class="reservation-interface">
                 <div class="interface-header"></div>
                 <div class="interface-content">
-                    <div class="select-date" id="select-date">
-                        <div class="date-info">
-                            <p>Select Date</p>
-                            <p>November 2022 <i class="fa fa-calendar" aria-hidden="true"></i></p>
+                    <div class="content-left">
+                        <div class="select-date" id="select-date">
+                            <div class="date-info">
+                                <p>Select Date</p>
+                                <p>November 2022 <i class="fa fa-calendar" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="calendar" id="calendar"></div>
                         </div>
-                        
-                        <div class="calendar" id="calendar">
+                        <div class="select-time">
+                            <div class="time-info">
+                                <p>Select Time</p>
+                            </div>
+                            <div class="schedules">
+                                <div>
+                                    <p>7:00 PM</p>
+                                </div>
+                                <div>
+                                    <p>8:00 PM</p>
+                                </div>
+                                <div>
+                                    <p>10:00 PM</p>
+                                </div>
+                                <div>
+                                    <p>10:30 PM</p>
+                                </div>
+                                <div>
+                                    <p>11:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="info-title">
+                                <p>Reservation Info</p>
+                            </div>
+                            <div class="info-inputs">
+                                <div>
+                                    <label for="reservation-phone">Phone</label>
+                                    <input type="text" name="reservation-phone" placeholder="Your phone number">
+                                </div>
+                                <div>
+                                    <label for="reservation-name">Name</label>
+                                    <input type="text" name="reservation-name" placeholder="Your name">
+                                </div>
 
+                                <div>
+                                    <label for="reservation-number" class="guest-number-title">Guest Number</label>
+                                    <div class="guest-range-container">
+                                        <input class="range" type="range" value="0" min="0" max="10" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></input>
+                                        <p id="guest-counter">0</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="reservation-email">Email</label>
+                                    <input type="text" name="reservation-email" placeholder="Your email">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="select-time"></div>
-                    <div class="info"></div>
-                    <div class="details"></div>
+                    <div class="content-right">
+                        <div class="details">
+                            <div class="details-title">
+                                <p>Booking Details</p>
+                            </div>
+                            <hr>
+                            <div class="details-content">
+                                <div>
+                                    <p>Date</p>
+                                    <p>2022-11-02</p>
+                                </div>
+                                <div>
+                                    <p>Hour</p>
+                                    <p>10:00 PM</p>
+                                </div>
+                                <div>
+                                    <p>Guest Number</p>
+                                    <p>4 persons</p>
+                                </div>
+                            </div>
+                            <div class="reserve-now">
+                                <a href="#">Reserve Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-top">
+                <div class="footer-logo"></div>
+                <div class="footer-top-content"> 
+                    <div class="footer-top-right">
+                        <div class="footer-top-right-content">
+                            <div class="newsletter">
+                                <p>Get our news</p>
+                                <form action="">
+                                    <input type="text" placeholder="Your email">
+                                    <input type="submit" value="subscribe">
+                                </form>
+                            </div>
+                            <div class="footer-legend">
+                                <h1>fine dining at <span>its finest</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-top-left">
+                        <p class="footer-row-title">Menu</p>
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="index.html#our-history">Our history</a>
+                            <a href="team.html">team</a>
+                            <a href="">menu</a>
+                            <a href="#gallery">gallery</a>
+                            <a href="contact.html">contact</a>
+                        </div>
+
+                        <p class="footer-row-title">Contact info</p>
+                        <div class="contact-info">
+                            <div class="email">
+                                <div class="contact-info-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                <a href="">info@schmoding.com</a>
+                            </div>
+                            <div class="phone">
+                                <div class="contact-info-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                <a href="">2-684-928-3976</a>
+                            </div>
+                            <div class="location">
+                                <div class="contact-info-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                <a href="">2100 E St Louis Ave, Las Vegas, NV 89104, EE. UU.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-text">
+                    <div class="terms">
+                        <a href="">Term & Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                    <p class="copyright">©2022 <span>Schmoding</span>, LLC. All Rights Reserved</p>
+                </div>
+                <div class="social-media">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>

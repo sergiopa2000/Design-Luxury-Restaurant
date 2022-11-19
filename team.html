@@ -14,19 +14,24 @@
 <body>
     <div class="container">
         <nav>
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
             <div class="logo">
                 <a href="index.html"><div class="logo-img"></div></a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#our-history">Our history</a></li>
-                <li><a href="">Team</a></li>
+                <li><a href="" class="active-nav">Team</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="menu.html#gallery">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="#" class="nav-reserve">Reserve now</a>
-            <div class="collapsed"></div>
+            <a href="contact.html#reservations" class="nav-reserve">Reserve now</a>
         </nav>
 
         <section class="kitchen">
@@ -59,7 +64,7 @@
         </section>
 
         <section class="our-chef">
-            <div class="title">
+            <div class="title" id="chef">
                 <h4>our chef</h4>
                 <h1>best of <span>the best</span></h1>
                 <p>Neil Tucker is our restaurant chef and owner, he is passionate about creating memorable culinary experiences for our guests. Drawing on years of experience in some of the world's most prestigious kitchens, they skillfully craft exquisite dishes that are both beautiful and delicious.<br><br> 
@@ -71,7 +76,7 @@
         </section>
 
         <section class="our-staff">
-            <div class="title">
+            <div class="title" id="staff">
                 <h4>our staff</h4>
                 <h1>better <span>together</span></h1>
                 <p>As a team at a Schmoding, we are dedicated to providing an exceptional dining experience by offering the finest food and drink, impeccable service, and a luxurious setting.
@@ -80,7 +85,9 @@
             <div class="staff-box-container">
                 <div class="left"><img src="imgs/team_imgs/staff/left.png" alt="left arrow"></div>
                 <div class="staff-box">
-                    <div class="staff-box-img"></div>
+                    <div class="staff-box-img-wrapper">
+                        <div class="staff-box-img"></div>
+                    </div>
                     <div class="staff-box-content">
                         <h3><span>Charles</span> Miles</h3>
                         <p>Wine Director</p>
@@ -92,7 +99,9 @@
                     </div>
                 </div>
                 <div class="staff-box">
-                    <div class="staff-box-img"></div>
+                    <div class="staff-box-img-wrapper">
+                        <div class="staff-box-img"></div>
+                    </div>
                     <div class="staff-box-content">
                         <h3><span>Donjohn</span> Halilton</h3>
                         <p>Breverage Director</p>
@@ -104,7 +113,9 @@
                     </div>
                 </div>
                 <div class="staff-box">
-                    <div class="staff-box-img"></div>
+                    <div class="staff-box-img-wrapper">
+                        <div class="staff-box-img"></div>
+                    </div>
                     <div class="staff-box-content">
                         <h3><span>Erin</span> Marshal</h3>
                         <p>Executive pastry chef</p>
@@ -168,12 +179,12 @@
                     </div>
                     <div class="footer-top-left">
                         <p class="footer-row-title">Menu</p>
-                        <div class="menu">
+                        <div class="footer-menu">
                             <a href="index.html#hero">Home</a>
                             <a href="index.html#our-history">Our history</a>
                             <a href="">team</a>
                             <a href="menu.html">menu</a>
-                            <a href="m,enu.html#gallery">gallery</a>
+                            <a href="menu.html#gallery">gallery</a>
                             <a href="contact.html">contact</a>
                         </div>
 

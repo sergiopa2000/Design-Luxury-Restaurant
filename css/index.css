@@ -9,10 +9,6 @@
     background-position: 73% center;
 }
 
-.hero *{
-    z-index: 2;
-}
-
 .hero-filter{
     z-index: 1;
     width: 100%;
@@ -22,6 +18,7 @@
 }
 
 .legend{
+    z-index: 1;
     width: 90%;
     text-align: center;
 
@@ -267,6 +264,17 @@
     background-color: var(--section-background);
 }
 
+.home-gallery a{
+    margin-bottom: min(10vw, 30px);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.home-gallery a:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
 /* --------------------- partners section ---------------------*/
 .partners{
     padding: min(10vw, 40px) 0;
@@ -287,16 +295,16 @@
     background-position: center center;
     background-repeat: no-repeat;
 
-    height: min(15vw, 50px);
+    height: min(15vw, 40px);
 
     transition: all 0.5s ease;
 }
 .partner-img:nth-child(2), .partner-img:nth-child(3), .partner-img:last-child{
-    height: min(18vw, 60px);
+    height: min(18vw, 45px);
 }
 
 .partner-img:nth-child(4), .partner-img:last-child{
-    margin-top: min(5vw, 20px);
+    margin-top: min(5vw, 18px);
 }
 
 .partner-img *{
